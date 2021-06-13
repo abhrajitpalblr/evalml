@@ -1,0 +1,233 @@
+06/13/2021 10:53:53 AM - INFO - automl_search.py: Generating pipelines to search over...
+06/13/2021 10:54:43 AM - DEBUG - automl_search.py: allowed_estimators set to ['Decision Tree Classifier', 'LightGBM Classifier', 'Extra Trees Classifier', 'Elastic Net Classifier', 'CatBoost Classifier', 'XGBoost Classifier', 'Random Forest Classifier', 'Logistic Regression Classifier']
+06/13/2021 10:54:43 AM - INFO - automl_search.py: 8 pipelines ready for search.
+06/13/2021 10:54:43 AM - DEBUG - automl_search.py: allowed_pipelines set to ['Decision Tree Classifier w/ Text Featurization Component', 'LightGBM Classifier w/ Text Featurization Component', 'Extra Trees Classifier w/ Text Featurization Component', 'Elastic Net Classifier w/ Text Featurization Component + Standard Scaler', 'CatBoost Classifier w/ Text Featurization Component', 'XGBoost Classifier w/ Text Featurization Component', 'Random Forest Classifier w/ Text Featurization Component', 'Logistic Regression Classifier w/ Text Featurization Component + Standard Scaler']
+06/13/2021 10:54:43 AM - DEBUG - automl_search.py: allowed_model_families set to [ModelFamily.CATBOOST, ModelFamily.EXTRA_TREES, ModelFamily.LINEAR_MODEL, ModelFamily.LIGHTGBM, ModelFamily.RANDOM_FOREST, ModelFamily.DECISION_TREE, ModelFamily.XGBOOST]
+06/13/2021 10:55:02 AM - INFO - logger.py: 
+*****************************
+06/13/2021 10:55:02 AM - INFO - logger.py: * Beginning pipeline search *
+06/13/2021 10:55:02 AM - INFO - logger.py: *****************************
+06/13/2021 10:55:02 AM - INFO - logger.py: 
+06/13/2021 10:55:02 AM - INFO - automl_search.py: Optimizing for Log Loss Binary. 
+06/13/2021 10:55:02 AM - INFO - automl_search.py: Lower score is better.
+
+06/13/2021 10:55:02 AM - INFO - automl_search.py: Using SequentialEngine to train and score pipelines.
+06/13/2021 10:55:02 AM - INFO - automl_search.py: Searching up to 1 batches for a total of 9 pipelines. 
+06/13/2021 10:55:02 AM - INFO - automl_search.py: Allowed model families: catboost, extra_trees, linear_model, lightgbm, random_forest, decision_tree, xgboost
+
+06/13/2021 10:55:03 AM - INFO - automl_search.py: Evaluating Baseline Pipeline: Mode Baseline Binary Classification Pipeline
+06/13/2021 10:55:08 AM - INFO - engine_base.py: Mode Baseline Binary Classification Pipeline:
+06/13/2021 10:55:08 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 8.624
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 8.624
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:55:08 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 8.667
+06/13/2021 10:55:08 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 8.638
+06/13/2021 10:55:08 AM - INFO - logger.py: 
+*****************************
+06/13/2021 10:55:08 AM - INFO - logger.py: * Evaluating Batch Number 1 *
+06/13/2021 10:55:08 AM - INFO - logger.py: *****************************
+06/13/2021 10:55:08 AM - INFO - logger.py: 
+06/13/2021 10:55:36 AM - INFO - engine_base.py: Elastic Net Classifier w/ Text Featurization Component + Standard Scaler:
+06/13/2021 10:55:36 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.157
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.274
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:55:36 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.299
+06/13/2021 10:55:36 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.243
+06/13/2021 10:55:36 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	Elastic Net Classifier w/ Text Featurization Component + Standard Scaler may not perform as estimated on unseen data.
+06/13/2021 10:55:57 AM - INFO - engine_base.py: Decision Tree Classifier w/ Text Featurization Component:
+06/13/2021 10:55:57 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.555
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.918
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:55:57 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.932
+06/13/2021 10:55:57 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.802
+06/13/2021 10:55:57 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	Decision Tree Classifier w/ Text Featurization Component may not perform as estimated on unseen data.
+06/13/2021 10:56:21 AM - INFO - engine_base.py: Random Forest Classifier w/ Text Featurization Component:
+06/13/2021 10:56:21 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.110
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.144
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:56:21 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.210
+06/13/2021 10:56:21 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.155
+06/13/2021 10:56:21 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	Random Forest Classifier w/ Text Featurization Component may not perform as estimated on unseen data.
+06/13/2021 10:56:44 AM - INFO - engine_base.py: LightGBM Classifier w/ Text Featurization Component:
+06/13/2021 10:56:44 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.136
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.228
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:56:44 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.280
+06/13/2021 10:56:44 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.215
+06/13/2021 10:56:44 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	LightGBM Classifier w/ Text Featurization Component may not perform as estimated on unseen data.
+06/13/2021 10:57:12 AM - INFO - engine_base.py: Logistic Regression Classifier w/ Text Featurization Component + Standard Scaler:
+06/13/2021 10:57:12 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.166
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.209
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:57:12 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.268
+06/13/2021 10:57:12 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.214
+06/13/2021 10:57:12 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	Logistic Regression Classifier w/ Text Featurization Component + Standard Scaler may not perform as estimated on unseen data.
+06/13/2021 10:57:40 AM - INFO - engine_base.py: XGBoost Classifier w/ Text Featurization Component:
+06/13/2021 10:57:40 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.113
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.183
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:57:40 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.239
+06/13/2021 10:57:40 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.179
+06/13/2021 10:57:40 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	XGBoost Classifier w/ Text Featurization Component may not perform as estimated on unseen data.
+06/13/2021 10:58:02 AM - INFO - engine_base.py: Extra Trees Classifier w/ Text Featurization Component:
+06/13/2021 10:58:02 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.216
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.220
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:58:02 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.320
+06/13/2021 10:58:02 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.252
+06/13/2021 10:58:02 AM - WARNING - automl_search.py: 	High coefficient of variation (cv >= 0.2) within cross validation scores.
+	Extra Trees Classifier w/ Text Featurization Component may not perform as estimated on unseen data.
+06/13/2021 10:58:23 AM - INFO - engine_base.py: CatBoost Classifier w/ Text Featurization Component:
+06/13/2021 10:58:23 AM - INFO - engine_base.py: 	Starting cross validation
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 		Training and scoring on fold 0
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 0: starting training
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 0: finished training
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 0: Scoring trained pipeline
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 0: Log Loss Binary score: 0.513
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 		Training and scoring on fold 1
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 1: starting training
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 1: finished training
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 1: Scoring trained pipeline
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 1: Log Loss Binary score: 0.523
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 		Training and scoring on fold 2
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 2: starting training
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 2: finished training
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 2: Scoring trained pipeline
+06/13/2021 10:58:23 AM - DEBUG - engine_base.py: 			Fold 2: Log Loss Binary score: 0.544
+06/13/2021 10:58:23 AM - INFO - engine_base.py: 	Finished cross validation - mean Log Loss Binary: 0.526
+06/13/2021 10:58:24 AM - INFO - automl_search.py: 
+Search finished after 03:20            
+06/13/2021 10:58:29 AM - INFO - automl_search.py: Best pipeline: Random Forest Classifier w/ Text Featurization Component
+06/13/2021 10:58:29 AM - INFO - automl_search.py: Best pipeline Log Loss Binary: 0.154849
+06/13/2021 10:59:36 AM - INFO - logger.py: 
+************************************************************
+06/13/2021 10:59:36 AM - INFO - logger.py: * Random Forest Classifier w/ Text Featurization Component *
+06/13/2021 10:59:36 AM - INFO - logger.py: ************************************************************
+06/13/2021 10:59:36 AM - INFO - logger.py: 
+06/13/2021 10:59:36 AM - INFO - pipeline_base.py: Problem Type: binary
+06/13/2021 10:59:36 AM - INFO - pipeline_base.py: Model Family: Random Forest
+06/13/2021 10:59:36 AM - INFO - logger.py: 
+06/13/2021 10:59:36 AM - INFO - logger.py: Pipeline Steps
+06/13/2021 10:59:36 AM - INFO - logger.py: ==============
+06/13/2021 10:59:36 AM - INFO - pipeline_base.py: 1. Text Featurization Component
+06/13/2021 10:59:36 AM - INFO - pipeline_base.py: 2. Random Forest Classifier
+06/13/2021 10:59:36 AM - INFO - component_base.py: 	 * n_estimators : 100
+06/13/2021 10:59:36 AM - INFO - component_base.py: 	 * max_depth : 6
+06/13/2021 10:59:36 AM - INFO - component_base.py: 	 * n_jobs : -1
+06/13/2021 10:59:36 AM - INFO - logger.py: 
+06/13/2021 10:59:36 AM - INFO - logger.py: Training
+06/13/2021 10:59:36 AM - INFO - logger.py: ========
+06/13/2021 10:59:36 AM - INFO - automl_search.py: Training for binary problems.
+06/13/2021 10:59:36 AM - INFO - automl_search.py: Total training time (including CV): 23.3 seconds
+06/13/2021 10:59:36 AM - INFO - logger.py: 
+06/13/2021 10:59:36 AM - INFO - logger.py: Cross Validation
+06/13/2021 10:59:36 AM - INFO - logger.py: ----------------
+06/13/2021 10:59:36 AM - INFO - automl_search.py:              Log Loss Binary  MCC Binary   AUC  Precision    F1  Balanced Accuracy Binary  Accuracy Binary  Sensitivity at Low Alert Rates # Training # Validation
+0                      0.110       0.895 0.987      0.938 0.921                     0.942            0.961                           0.246      1,594          797
+1                      0.144       0.854 0.980      0.919 0.888                     0.917            0.946                           0.246      1,594          797
+2                      0.210       0.783 0.962      0.839 0.837                     0.891            0.918                           0.266      1,594          797
+mean                   0.155       0.844 0.977      0.899 0.882                     0.917            0.942                           0.252          -            -
+std                    0.051       0.057 0.013      0.052 0.042                     0.026            0.022                           0.011          -            -
+coef of var            0.326       0.067 0.013      0.058 0.048                     0.028            0.023                           0.045          -            -
